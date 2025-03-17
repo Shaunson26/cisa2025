@@ -11,9 +11,9 @@ import { Navbar } from "@/components/navbar";
 const pageParams = {
   pageId: "Home",
   mainTitle: "CISA 2025",
-  subTitle: "Join us for CISA 2025",
-  dates: "October XX-YY, 2025",
-  location: "Somewhere, Spain",
+  subTitle: "VI Iberian Congress of Biological Systematics",
+  dates: "October 26-30, 2025",
+  location: "Tenerife, Spain",
 };
 
 export default function Home() {
@@ -391,7 +391,7 @@ export default function Home() {
               </div>
             </div>
             <p className="text-sm leading-loose text-muted-foreground">
-              © 2025 ConferenceX. All rights reserved.
+              © CISA 2025. All rights reserved.
             </p>
           </div>
           <div className="flex gap-4">
