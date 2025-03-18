@@ -4,13 +4,12 @@ import { Calendar, MapPin, Users } from "lucide-react";
 import { Navbar } from "@/components/navbar";
 
 const pageParams = {
-  pageId: "About",
 };
 
 export default function AboutPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar currentPage={pageParams.pageId} />
+      <Navbar />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
@@ -44,7 +43,7 @@ export default function AboutPage() {
                   alt="Conference Hall"
                   className="aspect-video overflow-hidden rounded-xl object-cover"
                   height={310}
-                  src="/placeholder.svg?height=310&width=550"
+                  src="/cisa2025/placeholder.svg?height=310&width=550"
                   width={550}
                 />
               </div>
