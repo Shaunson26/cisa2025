@@ -65,7 +65,7 @@ export default function Home() {
                     alt="Conference"
                     className="object-cover"
                     fill
-                    src="/placeholder.svg?height=310&width=550"
+                    src="/cisa2025/placeholder.svg?height=310&width=550"
                   />
                   <div className="absolute inset-0 ring-1 ring-inset ring-white/10 rounded-xl"></div>
                 </div>
