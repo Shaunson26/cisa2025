@@ -60,7 +60,7 @@ export function MobileNav({ links }: NavbarPropsMobile) {
               alt="Conference logo"
               className="object-cover"
               fill
-              src="/placeholder-logo.svg"
+              src="/cisa2025/placeholder-logo.svg"
             />
           </div>
           <span className="text-xl font-bold tracking-tight">CISA 2025</span>

@@ -58,7 +58,7 @@ export default function LocationPage() {
               </div>
               <div className="relative h-[300px] overflow-hidden rounded-xl">
                 <Image
-                  src="/images/venue/mcc-tenerife.webp"
+                  src="/cisa2025/images/venue/mcc-tenerife.jpg"
                   alt="Museum of Science and the Cosmos, Tenerife"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
