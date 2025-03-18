@@ -75,7 +75,7 @@ export default function LocationPage() {
             <div className="grid gap-6 lg:grid-cols-2">
               <div className="relative h-[300px] overflow-hidden rounded-xl">
                 <Image
-                  src="/images/venue/tenerife_island.webp"
+                  src="/cisa2025/images/venue/tenerife_island.webp"
                   alt="Tenerife Island, Canary Islands"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -158,7 +158,7 @@ export default function LocationPage() {
               </div>
               <div className="relative h-[300px] overflow-hidden rounded-xl">
                 <Image
-                  src="/images/venue/ipna.jpeg"
+                  src="/cisa2025/images/venue/ipna.jpeg"
                   alt="ipna_csic"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -181,7 +181,7 @@ export default function LocationPage() {
             <div className="grid gap-6 lg:grid-cols-2">
               <div className="relative h-[300px] overflow-hidden rounded-xl">
                 <Image
-                  src="/images/venue/la_laguna.webp"
+                  src="/cisa2025/images/venue/la_laguna.webp"
                   alt="San Cristobal de La Laguna"
                   fill
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -240,7 +240,7 @@ export default function LocationPage() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/images/venue/bycar.webp"
+                    src="/cisa2025/images/venue/bycar.webp"
                     alt="by_car"
                     width={300}
                     height={200}
@@ -263,7 +263,7 @@ export default function LocationPage() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/images/venue/tranvia1.webp"
+                    src="/cisa2025/images/venue/tranvia1.webp"
                     alt="tranvia_stops"
                     width={300}
                     height={200}
@@ -289,7 +289,7 @@ export default function LocationPage() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/images/venue/drago.webp"
+                    src="/cisa2025/images/venue/drago.webp"
                     alt="Historic Center of La Laguna"
                     width={300}
                     height={200}
@@ -317,7 +317,7 @@ export default function LocationPage() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/images/venue/dining.webp"
+                    src="/cisa2025/images/venue/dining.webp"
                     alt="Canarian Cuisine"
                     width={300}
                     height={200}
@@ -345,7 +345,7 @@ export default function LocationPage() {
                 </CardHeader>
                 <CardContent>
                   <Image
-                    src="/images/venue/anaga_park.webp"
+                    src="/cisa2025/images/venue/anaga_park.webp"
                     alt="Anaga Rural Park"
                     width={300}
                     height={200}
