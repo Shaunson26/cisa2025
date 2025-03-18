@@ -7,7 +7,7 @@ export function SponsorGrid() {
         <div key={i} className="flex items-center justify-center group">
           <div className="relative h-16 w-32 overflow-hidden rounded-md border bg-background p-2 transition-all duration-300 hover:shadow-md">
             <Image
-              src="/placeholder.svg?height=60&width=120"
+              src="/cisa2025/placeholder.svg?height=60&width=120"
               alt={`Sponsor ${i + 1}`}
               fill
               className="object-contain p-2 grayscale transition-all duration-300 group-hover:grayscale-0"
