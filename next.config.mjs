@@ -7,6 +7,10 @@ try {
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  output: 'export',
+  distDir: 'dist',
+  basePath: process.env.IS_GITHUB_PAGES === 'true' ? '/cisa2025' : '',
+  assetPrefix: process.env.IS_GITHUB_PAGES === 'true' ? '/cisa2025/' : '',
   eslint: {
     ignoreDuringBuilds: true,
   },
