@@ -9,7 +9,6 @@ import { SponsorGrid } from "@/components/sponsor-grid";
 import { Navbar } from "@/components/navbar";
 
 const pageParams = {
-  pageId: "Home",
   mainTitle: "CISA 2025",
   subTitle: "VI Iberian Congress of Biological Systematics",
   dates: "October 26-30, 2025",
@@ -19,13 +18,13 @@ const pageParams = {
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-gradient-to-b from-background to-background/90">
-      <Navbar currentPage={pageParams.pageId} />
+      <Navbar />
 
       <main className="flex-1">
         {/* Hero Section */}
         <section className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-background/95 pointer-events-none"></div>
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10 pointer-events-none"></div>
+          <div className="absolute inset-0 bg-[url('/cisa2025/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10 pointer-events-none"></div>
           <div className="container px-4 md:px-6 relative">
             <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
               <div className="flex flex-col justify-center space-y-4">
@@ -171,25 +170,25 @@ export default function Home() {
                   name="Dr. Jane Smith"
                   title="Professor of Quantum Physics"
                   institution="MIT"
-                  imageUrl="/placeholder.svg?height=400&width=400"
+                  imageUrl="/cisa2025/placeholder.svg?height=400&width=400"
                 />
                 <SpeakerCard
                   name="Prof. John Doe"
                   title="Director of AI Research"
                   institution="Stanford University"
-                  imageUrl="/placeholder.svg?height=400&width=400"
+                  imageUrl="/cisa2025/placeholder.svg?height=400&width=400"
                 />
                 <SpeakerCard
                   name="Dr. Maria Garcia"
                   title="Chief Scientist"
                   institution="CERN"
-                  imageUrl="/placeholder.svg?height=400&width=400"
+                  imageUrl="/cisa2025/placeholder.svg?height=400&width=400"
                 />
                 <SpeakerCard
                   name="Prof. David Kim"
                   title="Head of Biotechnology"
                   institution="Oxford University"
-                  imageUrl="/placeholder.svg?height=400&width=400"
+                  imageUrl="/cisa2025/placeholder.svg?height=400&width=400"
                 />
               </div>
               <Button variant="outline" className="mt-8 gap-1 rounded-full">
@@ -350,7 +349,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="relative w-full py-12 md:py-24 lg:py-32 overflow-hidden">
           <div className="absolute inset-0 bg-primary"></div>
-          <div className="absolute inset-0 bg-[url('/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10"></div>
+          <div className="absolute inset-0 bg-[url('/cisa2025/placeholder.svg?height=1080&width=1920')] bg-cover bg-center opacity-10"></div>
           <div className="container relative px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
