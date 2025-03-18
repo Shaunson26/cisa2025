@@ -1,11 +1,10 @@
+"use client";
+
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { MobileNav } from "./navbar-mobile";
-
-interface NavbarProps {
-  currentPage: string;
-}
+import { usePathname } from "next/navigation";
 
 interface NavLink {
   label: string;
@@ -15,13 +14,16 @@ interface NavLink {
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
-  { label: "Program", href: "/program" }//,
+  { label: "Program", href: "/program" },
+  { label: "Location", href: "/location" }
   //{ label: "Speakers", href: "/speakers" },
   //{ label: "Venue", href: "/venue" },
   //{ label: "Contact", href: "/contact" },
 ];
 
-export function Navbar({ currentPage }: NavbarProps) {
+export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
@@ -42,7 +44,7 @@ export function Navbar({ currentPage }: NavbarProps) {
               key={link.href}
               href={link.href}
               className={`text-sm font-medium ${
-                link.label == currentPage ? "" : "text-muted-foreground"
+                pathname === link.href ? "text-primary" : "text-muted-foreground"
               } transition-colors hover:text-primary`}
             >
               {link.label}
@@ -52,7 +54,7 @@ export function Navbar({ currentPage }: NavbarProps) {
         <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm">
           Register Now
         </Button>
-        <MobileNav currentPage={currentPage} links={navLinks} />
+        <MobileNav links={navLinks} />
       </div>
     </header>
   );
