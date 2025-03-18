@@ -8,13 +8,12 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 
 const pageParams = {
-  pageId: "Program",
 };
 
 export default function ProgramPage() {
   return (
     <div className="flex min-h-screen flex-col">
-      <Navbar currentPage={pageParams.pageId} />
+      <Navbar />
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-muted/50">
           <div className="container px-4 md:px-6">
@@ -96,7 +95,7 @@ export default function ProgramPage() {
                       <div className="space-y-3">
                         <div className="flex items-start gap-3">
                           <Image
-                            src="/placeholder.svg?height=50&width=50"
+                            src="/cisa2025/placeholder.svg?height=50&width=50"
                             alt="Dr. Jane Smith"
                             width={50}
                             height={50}
