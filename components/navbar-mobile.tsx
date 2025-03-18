@@ -6,10 +6,7 @@ import { X } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-
-interface NavbarProps {
-  currentPage: string;
-}
+import { usePathname } from "next/navigation";
 
 interface NavLink {
   label: string;
@@ -17,12 +14,13 @@ interface NavLink {
 }
 
 interface NavbarPropsMobile {
-  currentPage: string;
   links: NavLink[];
 }
 
-export function MobileNav({ currentPage, links }: NavbarPropsMobile) {
+export function MobileNav({ links }: NavbarPropsMobile) {
   const [isOpen, setIsOpen] = useState(false);
+  const pathname = usePathname();
+
   return (
     <>
       <Button
@@ -74,9 +72,7 @@ export function MobileNav({ currentPage, links }: NavbarPropsMobile) {
                 key={link.href}
                 href={link.href}
                 className={`text-lg font-medium transition-colors hover:text-primary ${
-                  link.label == currentPage
-                    ? "text-primary"
-                    : "text-muted-foreground"
+                  pathname === link.href ? "text-primary" : "text-muted-foreground"
                 }`}
                 onClick={() => setIsOpen(false)}
               >
