@@ -2,11 +2,12 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { X } from "lucide-react";
 import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
+
+
 
 interface NavLink {
   label: string;
@@ -16,6 +17,8 @@ interface NavLink {
 interface NavbarPropsMobile {
   links: NavLink[];
 }
+
+const conferenceLogo = '/cisa2025/images/logos/cisa-logo-no-letters.svg'
 
 export function MobileNav({ links }: NavbarPropsMobile) {
   const [isOpen, setIsOpen] = useState(false);
@@ -55,12 +58,12 @@ export function MobileNav({ links }: NavbarPropsMobile) {
         )}
       >
         <Link href="/" className="flex items-center gap-2 h-16 px-2">
-          <div className="relative h-8 w-8 overflow-hidden rounded-full bg-primary">
+          <div className="relative h-14 w-14 overflow-hidden rounded-full">
             <Image
               alt="Conference logo"
               className="object-cover"
               fill
-              src="/cisa2025/placeholder-logo.svg"
+              src={conferenceLogo}
             />
           </div>
           <span className="text-xl font-bold tracking-tight">CISA 2025</span>
