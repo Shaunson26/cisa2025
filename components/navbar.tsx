@@ -21,19 +21,22 @@ const navLinks: NavLink[] = [
   //{ label: "Contact", href: "/contact" },
 ];
 
+const conferenceLogo = '/cisa2025/images/logos/cisa-logo-no-letters.svg'
+
 export function Navbar() {
+
   const pathname = usePathname();
 
   return (
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-8 w-8 overflow-hidden rounded-full bg-primary">
+          <div className="relative h-14 w-14 overflow-hidden rounded-full">
             <Image
               alt="Conference logo"
               className="object-cover"
               fill
-              src="/cisa2025/placeholder-logo.svg"
+              src={conferenceLogo}
             />
           </div>
           <span className="text-xl font-bold tracking-tight">CISA 2025</span>
