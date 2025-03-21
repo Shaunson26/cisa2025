@@ -14,6 +14,7 @@ interface NavLink {
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
+  { label: "Registration", href: "/registration" },
   { label: "Program", href: "/program" },
   { label: "Location", href: "/location" },
   { label: "Speakers", href: "/speakers" },
@@ -21,10 +22,9 @@ const navLinks: NavLink[] = [
   //{ label: "Contact", href: "/contact" },
 ];
 
-const conferenceLogo = '/cisa2025/images/logos/cisa-logo-no-letters.svg'
+const conferenceLogo = "/cisa2025/images/logos/cisa-logo-no-letters.svg";
 
 export function Navbar() {
-
   const pathname = usePathname();
 
   return (
@@ -47,16 +47,21 @@ export function Navbar() {
               key={link.href}
               href={link.href}
               className={`text-sm font-medium ${
-                pathname === link.href ? "text-primary" : "text-muted-foreground"
+                pathname === link.href
+                  ? "text-primary"
+                  : "text-muted-foreground"
               } transition-colors hover:text-primary`}
             >
               {link.label}
             </Link>
           ))}
         </nav>
-        <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm">
-          Register Now
-        </Button>
+        <Link href="/registration">
+          <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm">
+            Register Now
+          </Button>
+        </Link>
+
         <MobileNav links={navLinks} />
       </div>
     </header>
