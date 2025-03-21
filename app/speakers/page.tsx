@@ -2,6 +2,8 @@ import { Metadata } from "next";
 import speakerInfo from "@/lib/keynote-speaker-information.json";
 import Image from "next/image";
 import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+
 
 export const metadata: Metadata = {
   title: "Speakers | CISA 2025",
@@ -75,6 +77,7 @@ export default function SpeakersPage() {
           </div>
         </section>
       </main>
+      <Footer />
     </div>
   );
 } 
