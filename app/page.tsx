@@ -15,8 +15,8 @@ const pageProps = {
   cardImage: "/cisa2025/images/logos/cisa-logo-no-letters.svg",
   bgImage: "/cisa2025/images/background-desktop.webp",
   abstractDate: "Janurary 1, 2025",
-  earlyRegistrationDate: "Janurary 1, 2025",
-  regularRegistrationDate: "Janurary 1, 2025"
+  earlyRegistrationDate: "June 30, 2025",
+  regularRegistrationDate: "July 1, 2025"
 }
 
 export default function Home() {

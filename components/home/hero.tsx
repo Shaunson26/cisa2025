@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Calendar, MapPin } from "lucide-react";
 import Image from "next/image";
@@ -34,9 +35,11 @@ export function Hero(props: HeroProps) {
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
-              <Button size="lg" className="px-8 shadow-lg">
-                Register Now
-              </Button>
+              <Link href="/registration">
+                <Button size="lg" className="px-8 shadow-lg">
+                  Register Now
+                </Button>
+              </Link>
               <Button size="lg" variant="outline" className="px-8">
                 View Program
               </Button>
