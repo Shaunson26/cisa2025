@@ -26,6 +26,8 @@ export function SpeakerSection() {
                 title={d.title}
                 institution={d.institution}
                 imageUrl={d.imageUrl}
+                description={d.description}
+                link={d.link}
               />
             ))}
           </div>
