@@ -18,7 +18,7 @@ export function SpeakerSection() {
               Learn from the brightest minds in the field
             </p>
           </div>
-          <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8">
+          <div className="relative grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8">
             {speakerInfo.map((d) => (
               <SpeakerCard
                 key={d.name}
@@ -26,6 +26,8 @@ export function SpeakerSection() {
                 title={d.title}
                 institution={d.institution}
                 imageUrl={d.imageUrl}
+                description={d.description}
+                link={d.link}
               />
             ))}
           </div>
