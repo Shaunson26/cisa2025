@@ -33,8 +33,8 @@ export default function LocationPage() {
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold">Museum of Science and the Cosmos (MCC), Tenerife</h2>
                 <p className="text-muted-foreground">
-                In the municipality of San Cristóbal de La Laguna (Tenerife), the Museum of Science and the Cosmos is located,
-                 one of the most important centers for the dissemination of scientific knowledge in the Canary Islands, 
+                Located in the municipality of San Cristóbal de La Laguna (Tenerife), 
+                the Museum of Science and the Cosmos is one of the most important centers for the dissemination of scientific knowledge in the Canary Islands, 
                  particularly in the areas of natural sciences, biology, astronomy, physics, and environmental sciences, 
                  making it an exceptional place to hold CISA 2025. The planetarium, interactive exhibits, 
                  and workshops held here make science more accessible and engaging for the general public.

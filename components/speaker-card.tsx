@@ -1,3 +1,5 @@
+'use client';
+
 import Image from "next/image";
 
 interface SpeakerCardProps {
@@ -5,6 +7,8 @@ interface SpeakerCardProps {
   title: string;
   institution: string;
   imageUrl: string;
+  description?: string;
+  link?: string;
 }
 
 export function SpeakerCard({
@@ -12,6 +16,8 @@ export function SpeakerCard({
   title,
   institution,
   imageUrl,
+  description,
+  link,
 }: SpeakerCardProps) {
   return (
     <div className="group flex flex-col items-center space-y-4">
@@ -26,7 +32,27 @@ export function SpeakerCard({
       </div>
       <div className="space-y-1 text-center">
         <h3 className="font-bold">{name}</h3>
+        {title && <p className="text-sm text-muted-foreground">{title}</p>}
         <p className="text-sm text-muted-foreground">{institution}</p>
+      </div>
+
+      {/* Description and link - shown on hover */}
+      <div className="
+        text-center transition-all duration-300 ease-in-out max-w-sm
+        opacity-0 max-h-0 overflow-hidden
+        group-hover:opacity-100 group-hover:max-h-[1000px]
+      ">
+        {description && <p className="text-sm text-muted-foreground mb-4">{description}</p>}
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
+          >
+            Learn More
+          </a>
+        )}
       </div>
     </div>
   );
