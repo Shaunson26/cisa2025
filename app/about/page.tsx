@@ -19,22 +19,21 @@ export default function AboutPage() {
                   About the Conference
                 </h1>
                 <p className="text-muted-foreground md:text-xl">
-                  ConferenceX 2025 is the premier international gathering for
-                  researchers, practitioners, and industry leaders in science
-                  and technology.
+                  CISA 2025 is the premier international gathering for
+                  researchers and practitioners in systematics and evolutionary biology.
                 </p>
                 <div className="flex flex-col gap-2 md:flex-row md:gap-4">
                   <div className="flex items-center gap-1">
                     <Calendar className="h-5 w-5 text-primary" />
-                    <span>June 15-18, 2025</span>
+                    <span>October 26-30, 2025</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <MapPin className="h-5 w-5 text-primary" />
-                    <span>Barcelona, Spain</span>
+                    <span>La Laguna, Tenerife, Spain</span>
                   </div>
                   <div className="flex items-center gap-1">
                     <Users className="h-5 w-5 text-primary" />
-                    <span>800+ Attendees</span>
+                    <span>100+ Attendees</span>
                   </div>
                 </div>
               </div>
