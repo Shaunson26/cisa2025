@@ -17,7 +17,6 @@ const navLinks: NavLink[] = [
   { label: "Speakers", href: "/speakers" },
   { label: "Location", href: "/location" },
   { label: "Registration", href: "/registration" },
-  { label: "Contact", href: "/contact" },
 ];
 
 const conferenceLogo = "/cisa2025/images/logos/cisa-logo-no-letters.svg";
