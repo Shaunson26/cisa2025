@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { RegistrationPageLink } from "./registration-link";
 
 export function RegistrationTitleSection() {
@@ -12,7 +13,15 @@ export function RegistrationTitleSection() {
             <p className="max-w-[700px] text-muted-foreground md:text-xl">
               Here you will find information about registration fees,{" "}
               <RegistrationPageLink text="link to the registration form" />, and
-              indications for submission of abstracts.
+              indications for{" "}
+              <Link
+                href="#abstract-section"
+                aria-label="Link to abstract section"
+                className="font-semibold underline text-primary hover:text-blue-800 transition-colors focus:outline-none focus:ring focus:text-blue-800"
+              >
+                submission of abstracts
+              </Link>
+              .
             </p>
           </div>
         </div>

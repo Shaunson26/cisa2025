@@ -1,7 +1,7 @@
 import { SpeakerCard } from "@/components/speaker-card";
 import speakerInfo from "@/lib/keynote-speaker-information.json";
 
-export function SpeakerSection() {
+export function KeynoteSpeakerSection() {
   return (
     <section className="w-full py-12 md:py-16 lg:py-20 bg-muted/30">
       <div className="container px-4 md:px-6">
@@ -9,7 +9,7 @@ export function SpeakerSection() {
           <div className="space-y-2">
             <div className="inline-flex items-center text-sm font-medium text-primary">
               <span className="h-px w-8 bg-primary mr-2"></span>
-              SPEAKERS
+              KEYNOTE SPEAKERS
             </div>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               World-Class Experts
