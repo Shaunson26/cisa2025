@@ -15,7 +15,7 @@ export function RegistrationAreYouReady() {
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
-            <Button size="lg" variant="secondary" className="px-8 shadow-lg">
+            <Button size="lg" variant="secondary" className="px-8 shadow-lg hover:underline">
               <RegistrationPageLink text="Register Now" className="no-underline" />
             </Button>
           </div>

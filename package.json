@@ -8,7 +8,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "git-prune-remote": "git remote update origin --prune"
+    "git-prune": "git remote update origin --prune"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

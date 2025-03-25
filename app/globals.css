@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -14,6 +16,14 @@ body {
 
 @layer base {
   :root {
+    /* --cornflower-blue: hsla(213, 81%, 64%, 1);
+    --eerie-black: hsla(60, 7%, 12%, 1);
+    --redwood: hsla(353, 44%, 44%, 1);
+    --moss-green: hsla(79, 24%, 51%, 1);
+    --sage: hsla(81, 21%, 65%, 1);
+    --background: 81, 21%, 65%, 1; */
+
+
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
     --card: 0 0% 100%;

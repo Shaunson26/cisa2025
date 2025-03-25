@@ -1,9 +1,11 @@
 import { Metadata } from "next";
-import speakerInfo from "@/lib/keynote-speaker-information.json";
 import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
+import speakerInfo from "@/lib/keynote-speaker-information.json";
 
 export const metadata: Metadata = {
   title: "Speakers | CISA 2025",
@@ -24,7 +26,8 @@ export default function SpeakersPage() {
                   Our Distinguished Speakers
                 </h1>
                 <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Meet the experts who will share their knowledge and insights at CISA 2025
+                  Meet the experts who will share their knowledge and insights
+                  at CISA 2025
                 </p>
               </div>
             </div>
@@ -36,7 +39,10 @@ export default function SpeakersPage() {
           <div className="container px-4 md:px-6">
             <div className="grid gap-12">
               {speakerInfo.map((speaker, index) => (
-                <div key={speaker.name} className="flex flex-col md:flex-row gap-8 items-start">
+                <div
+                  key={speaker.name}
+                  className="flex flex-col md:flex-row gap-8 items-start"
+                >
                   <div className="w-full md:w-1/3 lg:w-1/4">
                     <div className="relative aspect-square overflow-hidden rounded-xl">
                       <Image
@@ -50,26 +56,22 @@ export default function SpeakersPage() {
                   <div className="flex-1 space-y-4">
                     <div>
                       <h2 className="text-2xl font-bold">{speaker.name}</h2>
-                      {speaker.title && (
-                        <p className="text-lg text-muted-foreground">{speaker.title}</p>
-                      )}
-                      <p className="text-muted-foreground">{speaker.institution}</p>
-                    </div>
-                    {speaker.description && (
-                      <p className="text-muted-foreground leading-relaxed">
-                        {speaker.description}
+
+                      <p className="text-muted-foreground">
+                        {speaker.institution}
                       </p>
-                    )}
-                    {speaker.link && (
-                      <a
-                        href={speaker.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="inline-block bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors"
-                      >
-                        Learn More
-                      </a>
-                    )}
+                    </div>
+
+                    <p className="text-muted-foreground leading-relaxed">
+                      {speaker.description}
+                    </p>
+                    <p>
+                      <Link href={speaker.link} target="_blank" className="">
+                        <Button className="hidden md:inline-flex bg-primary text-primary-foreground shadow-sm hover:underline">
+                          Go to institution profile page
+                        </Button>
+                      </Link>
+                    </p>
                   </div>
                 </div>
               ))}
@@ -80,4 +82,4 @@ export default function SpeakersPage() {
       <Footer />
     </div>
   );
-} 
+}

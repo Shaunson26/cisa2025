@@ -28,7 +28,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-14 w-14 overflow-hidden rounded-full">
+          <div className="relative h-14 w-14 ">
             <Image
               alt="Conference logo"
               className="object-cover"
@@ -36,7 +36,7 @@ export function Navbar() {
               src={conferenceLogo}
             />
           </div>
-          <span className="text-xl font-bold tracking-tight">CISA 2025</span>
+          {/* <span className="text-xl font-bold tracking-tight">CISA 2025</span> */}
         </Link>
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
@@ -54,7 +54,7 @@ export function Navbar() {
           ))}
         </nav>
         <Link href="/registration">
-          <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm">
+          <Button className="hidden md:inline-flex bg-primary text-primary-foreground shadow-sm hover:underline">
             Register Now
           </Button>
         </Link>
