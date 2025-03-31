@@ -22,13 +22,13 @@ function DateBadge(props: HeroProps) {
 
 function DateText(props: HeroProps) {
   return (
-    <div className="flex flex-wrap items-center gap-4 text-sm md:text-2xl">
+    <div className="flex flex-wrap items-center gap-4 text-sm md:text-2xl text-foreground">
       <div className="flex items-center gap-1">
-        <Calendar className="h-4 w-4 text-primary" />
+        <Calendar className="h-4 w-4" />
         <span>{props.dates}</span>
       </div>
       <div className="flex items-center gap-1">
-        <MapPin className="h-4 w-4 text-primary" />
+        <MapPin className="h-4 w-4" />
         <span>{props.location}</span>
       </div>
     </div>
@@ -63,9 +63,9 @@ export function Hero(props: HeroProps) {
         <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
           <div className="flex flex-col justify-center space-y-4">
             {/* {DateBadge(props)} */}
-            { DateText(props) }
+            {DateText(props)}
             <div className="space-y-2">
-              <h1 className="text-5xl font-semibold font-dynapuff sm:text-5xl xl:text-8xl/none">
+              <h1 className="text-6xl font-semibold font-dynapuff md:text-8xl xl:text-9xl/none">
                 {props.mainTitle}
               </h1>
               <p className="max-w-[600px] md:max-w-4xl md:text-3xl">
@@ -74,15 +74,18 @@ export function Hero(props: HeroProps) {
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link href="/registration">
-                <Button size="lg" className="px-8 shadow-lg hover:underline">
+                <Button
+                  size="lg"
+                  className="px-8 shadow-lg hover:bg-accent"
+                >
                   Register Now
                 </Button>
               </Link>
               <Link href="/program">
                 <Button
                   size="lg"
-                  variant="outline"
-                  className="px-8 bg-secondary hover:underline"
+                  variant="secondary"
+                  className="px-8 shadow-lg hover:bg-accent"
                 >
                   View Program
                 </Button>

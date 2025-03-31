@@ -30,18 +30,18 @@ const cardInfo = [
 
 export function DinnerTourFeeSection() {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-muted/30">
+    <section className="w-full py-12 md:py-16 lg:py-20 ">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
           <div className="space-y-2">
-            <div className="inline-flex items-center text-sm font-medium text-primary">
-              <span className="h-px w-8 bg-primary mr-2"></span>
+            <div className="inline-flex items-center text-sm font-medium text-accent">
+              <span className="h-px w-8 bg-accent mr-2"></span>
               OPTIONAL ADD-ONS
             </div>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               Enhance Your Experience
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="max-w-[700px] text-primary/80 md:text-xl">
               Add these optional events when you <RegistrationPageLink text="register"/>
             </p>
           </div>
@@ -60,10 +60,10 @@ export function DinnerTourFeeSection() {
               </div>
               <CardHeader>
                 <CardTitle>{v.label}</CardTitle>
-                <CardDescription>{v.date}</CardDescription>
+                <CardDescription className="text-tertiary">{v.date}</CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground mb-4">
+                <p className=" mb-4">
                   {v.text}
                 </p>
                 <div className="flex items-center justify-between">

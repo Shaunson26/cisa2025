@@ -38,24 +38,24 @@ import { Footer } from "@/components/footer";
 
 export default function LocationPage() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="flex flex-col">
       <Navbar />
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-muted/50 to-background">
+      <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
-                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl">
-                  Conference Venue
+                <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
+                Conference Venue
                 </h1>
-                <p className="max-w-[700px] text-muted-foreground md:text-xl lg:text-2xl">
-                  From Earth to the Cosmos: A conference venue that sparks
-                  discovery.
+                <p className="mx-auto max-w-[700px] text-tertiary md:text-xl">
+                From Earth to the Cosmos: A conference venue that sparks
+                discovery.
                 </p>
               </div>
             </div>
           </div>
-        </section>
+        </section>  
 
         <section className="w-full py-12 md:py-16 lg:py-20">
           <div className="container px-4 md:px-6">
@@ -64,7 +64,7 @@ export default function LocationPage() {
                 <h2 className="text-3xl font-bold">
                   Museum of Science and the Cosmos (MCC), Tenerife
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="">
                   Located in the municipality of San Cristóbal de La Laguna
                   (Tenerife), the Museum of Science and the Cosmos is one of the
                   most important centers for the dissemination of scientific
@@ -75,20 +75,21 @@ export default function LocationPage() {
                   workshops held here make science more accessible and engaging
                   for the general public.
                 </p>
-                <div className="grid gap-4">
+                <div className="grid gap-4 text-secondary">
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-primary" />
+                    <MapPin className="h-5 w-5" />
                     <span>
                       Avda. Los Menceyes 70, 38200 La Laguna, Tenerife (Spain)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-primary" />
+                    <Phone className="h-5 w-5" />
                     <span>0034 922 31 52 65</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Globe className="h-5 w-5 text-primary" />
-                    <span>www.museosdetenerife.org</span>
+                    
+                    <Globe className="h-5 w-5" />
+                    <Link href="www.museosdetenerife.org" className="hover:text-accent">www.museosdetenerife.org</Link>
                   </div>
                 </div>
               </div>
@@ -106,7 +107,7 @@ export default function LocationPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
+        <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2">
               <div className="relative h-[300px] overflow-hidden rounded-xl">
@@ -120,7 +121,7 @@ export default function LocationPage() {
               </div>
               <div className="space-y-4">
                 <h2 className="text-3xl font-bold">Tenerife</h2>
-                <p className="text-muted-foreground">
+                <p className="">
                   Tenerife is the largest island and the one with the highest
                   population in the Canary Islands archipelago. A place where
                   volcanic landscapes, such as Teide National Park, combine with
@@ -137,19 +138,19 @@ export default function LocationPage() {
                   sciences, and many other disciplines. It is an ideal setting
                   for the development of CISA 2025.
                 </p>
-                <div className="grid gap-4">
+                <div className="grid gap-4 text-secondary-200">
                   <div className="flex items-center gap-2">
-                    <Mountain className="h-5 w-5 text-primary" />
+                    <Mountain className="h-5 w-5" />
                     <span>
                       Mount Teide National Park - UNESCO World Heritage Site
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Sun className="h-5 w-5 text-primary" />
+                    <Sun className="h-5 w-5" />
                     <span>Average temperature: 22°C (72°F) year-round</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Waves className="h-5 w-5 text-primary" />
+                    <Waves className="h-5 w-5" />
                     <span>340+ km of coastline with pristine beaches</span>
                   </div>
                 </div>
@@ -165,7 +166,7 @@ export default function LocationPage() {
                 <h2 className="text-3xl font-bold">
                   Institute of Natural Products and Agrobiology (IPNA - CSIC)
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="">
                   The Institute of Natural Products and Agrobiology (IPNA -
                   CSIC), belonging to the Spanish National Research Council
                   (CSIC) is the research center responsible for organizing the
@@ -178,24 +179,24 @@ export default function LocationPage() {
                   collaborations with national and international institutions,
                   and the use of advanced infrastructure with state-of-the-art
                   laboratories and technology have contributed to the
-                  recognition of IPNA – CSIC as a benchmark for scientific
+                  recognition of IPNA - CSIC as a benchmark for scientific
                   excellence in the Canary Islands.
                 </p>
-                <div className="grid gap-4">
+                <div className="grid gap-4 text-secondary">
                   <div className="flex items-center gap-2">
-                    <MapPin className="h-5 w-5 text-primary" />
+                    <MapPin className="h-5 w-5" />
                     <span>
                       Avda. Astrofísico Francisco Sánchez 3, 38206 La Laguna,
                       Tenerife (Spain)
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5 text-primary" />
+                    <Phone className="h-5 w-5" />
                     <span>0034 922 256 847</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Globe className="h-5 w-5 text-primary" />
-                    <span>www.ipna.csic.es</span>
+                    <Globe className="h-5 w-5" />
+                    <Link href="www.ipna.csic.es" className="hover:text-accent">www.ipna.csic.es</Link>
                   </div>
                 </div>
               </div>
@@ -213,7 +214,7 @@ export default function LocationPage() {
           </div>
         </section>
 
-        <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
+        <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6">
             <div className="grid gap-6 lg:grid-cols-2">
               <div className="relative h-[300px] overflow-hidden rounded-xl">
@@ -229,7 +230,7 @@ export default function LocationPage() {
                 <h2 className="text-3xl font-bold">
                   San Cristóbal de La Laguna
                 </h2>
-                <p className="text-muted-foreground">
+                <p className="">
                   San Cristóbal de La Laguna, founded in 1496 and commonly known
                   as La Laguna, is a municipality located on the island of
                   Tenerife. Due to its historical, cultural, and architectural
@@ -241,17 +242,17 @@ export default function LocationPage() {
                   cafes, and restaurants make it a dynamic and welcoming city,
                   ideal for enjoyment and entertainment.
                 </p>
-                <div className="grid gap-4">
+                <div className="grid gap-4 text-secondary-200">
                   <div className="flex items-center gap-2">
-                    <Landmark className="h-5 w-5 text-primary" />
+                    <Landmark className="h-5 w-5 " />
                     <span>UNESCO World Heritage Site since 1999</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <GraduationCap className="h-5 w-5 text-primary" />
+                    <GraduationCap className="h-5 w-5 " />
                     <span>Home to the University of La Laguna (ULL)</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Coffee className="h-5 w-5 text-primary" />
+                    <Coffee className="h-5 w-5" />
                     <span>
                       Historic city center with vibrant cafes and restaurants
                     </span>
@@ -265,7 +266,7 @@ export default function LocationPage() {
         <section className="w-full py-12 md:py-16 lg:py-20">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl mb-8">
-              Getting Here
+              Getting There
             </h2>
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
               <Card>
@@ -297,7 +298,7 @@ export default function LocationPage() {
                       />
                     </DialogContent>
                   </Dialog>
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
                     <li>10 minutes from the City Center of La Laguna</li>
                     <li>15 minutes from the City Center of Santa Cruz</li>
                     <li>
@@ -338,7 +339,7 @@ export default function LocationPage() {
                     </DialogContent>
                   </Dialog>
 
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
                     <li>Tramway #1, stop at Museo de la Ciencia</li>
                     <li>Bus #14 stop at Museo de la Ciencia</li>
                   </ul>
@@ -375,7 +376,7 @@ export default function LocationPage() {
                     height={200}
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-sm ">
                     <li className="flex items-center gap-2">
                       <Landmark className="h-4 w-4" />
                       <span>Historic Center of La Laguna (UNESCO Site)</span>
@@ -403,7 +404,7 @@ export default function LocationPage() {
                     height={200}
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Utensils className="h-4 w-4" />
                       <span>Traditional Canarian restaurants in La Laguna</span>
@@ -431,7 +432,7 @@ export default function LocationPage() {
                     height={200}
                     className="w-full h-48 object-cover rounded-lg mb-4"
                   />
-                  <ul className="space-y-2 text-sm text-muted-foreground">
+                  <ul className="space-y-2 text-sm">
                     <li className="flex items-center gap-2">
                       <Mountain className="h-4 w-4" />
                       <span>Anaga Rural Park (UNESCO Biosphere Reserve)</span>

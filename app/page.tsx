@@ -2,11 +2,11 @@ import { Navbar } from "@/components/navbar";
 import { Hero } from "@/components/home/hero";
 import { IntroText } from "@/components/home/intro-text";
 // import { CountdownSection } from "@/components/home/countdown";
-import { KeyDateSection } from "@/components/home/key-date-cards";
+import { KeyDateSection } from "@/components/home/key-date-section";
 import { KeynoteSpeakerSection } from "@/components/home/keynote-speaker-section";
 import { OrganisationCommitteeSection } from "@/components/home/organisation-committee-section";
 import { ScientificCommitteeSection } from "@/components/home/scientific-committee-section";
-import { SponsorSection } from "@/components/home/sponsers";
+import { SponsorSection } from "@/components/home/sponsors";
 import { Footer } from "@/components/footer";
 
 const pageProps = {
@@ -21,9 +21,10 @@ const pageProps = {
   regularRegistrationDate: "July 1, 2025"
 }
 
+// bg-gradient-to-b from-background to-background/90
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col bg-gradient-to-b from-background to-background/90">
+    <div className="flex min-h-screen flex-col">
       
       <Navbar />
 

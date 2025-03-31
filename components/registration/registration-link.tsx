@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function RegistrationPageLink({text = "link to the registration form", className}: {text?: string, className?: string}) {
 
-  const defaultClasses = "font-semibold underline text-primary hover:text-blue-800 transition-colors focus:outline-none focus:ring focus:text-blue-800"
+  const defaultClasses = "underline hover:text-accent transition-colors focus:outline-none focus:ring focus:text-accent focus:ring-accent"
   const classes = className ? className : defaultClasses;
 
     return (
