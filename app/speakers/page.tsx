@@ -18,14 +18,14 @@ export default function SpeakersPage() {
       <Navbar />
       <main className="flex-1">
         {/* Hero Section */}
-        <section className="w-full py-12 md:py-16 lg:py-20 bg-muted">
+        <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
                   Our Distinguished Speakers
                 </h1>
-                <p className="mx-auto max-w-[700px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+                <p className="mx-auto max-w-[700px] text-tertiary md:text-xl">
                   Meet the experts who will share their knowledge and insights
                   at CISA 2025
                 </p>
@@ -56,18 +56,17 @@ export default function SpeakersPage() {
                   <div className="flex-1 space-y-4">
                     <div>
                       <h2 className="text-2xl font-bold">{speaker.name}</h2>
-
-                      <p className="text-muted-foreground">
+                      <p className="text-primary/80">
                         {speaker.institution}
                       </p>
                     </div>
 
-                    <p className="text-muted-foreground leading-relaxed">
+                    <p className="text-primary leading-relaxed">
                       {speaker.description}
                     </p>
                     <p>
                       <Link href={speaker.link} target="_blank" className="">
-                        <Button className="hidden md:inline-flex bg-primary text-primary-foreground shadow-sm hover:underline">
+                        <Button className="hover:bg-accent">
                           Go to institution profile page
                         </Button>
                       </Link>

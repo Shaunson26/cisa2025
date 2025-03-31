@@ -36,7 +36,7 @@ function MagnaCongresosLink() {
       href="https://www.magnacongresos.com/"
       target="_blank"
       aria-label="Link to conference registration partners home page"
-      className="font-semibold underline text-primary hover:text-blue-800 transition-colors focus:outline-none focus:ring focus:text-blue-800"
+      className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:text-accent focus:ring-accent"
     >
       Magna Congresos
     </Link>
@@ -49,7 +49,7 @@ function MagnaEmailLink() {
       href="mailto:cisa2025@magnacongresos.es"
       target="_blank"
       aria-label="Link to conference registration email address for questions"
-      className="font-semibold underline text-primary hover:text-blue-800 transition-colors focus:outline-none focus:ring focus:text-blue-800"
+      className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:text-accent focus:ring-accent"
     >
       cisa2025@magnacongresos.es
     </Link>
@@ -64,38 +64,34 @@ export function RegistrationFeesSection() {
 
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
           <div className="space-y-2">
-            <div className="inline-flex items-center text-sm font-medium text-primary">
-              <span className="h-px w-8 bg-primary mr-2"></span>
+            <div className="inline-flex items-center text-sm font-medium text-accent">
+              <span className="h-px w-8 bg-accent mr-2"></span>
               REGISTRATION
             </div>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               Registration options
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl">
+            <p className="max-w-[700px] text-primary/80 md:text-xl">
               Early bird until 30th June 2023
             </p>
           </div>
 
-          <div className="flex items-center gap-2 mt-2">
-            <Badge
-              variant="outline"
-              className="text-sm py-1 border-primary/30 bg-primary/5"
-            >
-              Early Registration Deadline: June 30, 2025
-            </Badge>
-          </div>
+
         </div>
 
         {/* Magna info */}
 
-        <div className="flex flex-col items-center justify-center space-y-4  mb-10">
+        <div className="flex flex-col items-center justify-center space-y-4 mb-10">
           <Alert className="max-w-6xl mx-auto text-base">
             <AlertCircle className="h-4 w-4" />
             <AlertTitle className="font-bold">Info</AlertTitle>
             <AlertDescription>
             Registration will be handled in conjunction with{" "}
             {MagnaCongresosLink()}. We provide a{" "}
-            <RegistrationPageLink text="link to the registration form" />. If
+            <RegistrationPageLink 
+            text="link to the registration form"
+            className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:text-accent focus:ring-accent"
+             />. If
             you have questions about the registration process or related to
             travel logistics and accommodation, do not hesitate to contact us at{" "}
             {MagnaEmailLink()}.
@@ -116,7 +112,7 @@ export function RegistrationFeesSection() {
                 key={i}
                 className="flex justify-center items-center gap-2 lg:justify-start"
               >
-                <Check className="h-4 w-4 text-primary" />
+                <Check className="h-4 w-4 text-accent" />
                 <span>{v}</span>
               </div>
             ))}

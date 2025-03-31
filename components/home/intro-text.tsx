@@ -1,9 +1,9 @@
 export function IntroText() {
   return (
-    <section className="w-full py-12 md:py-16 lg:py-20 bg-gradient-to-b from-primary/5 to-background">
+    <section className="w-full py-12 md:py-16 lg:py-20 bg-muted/30">
       <div className="container px-4 md:px-6 text-justify">
         <h2 className="text-3xl font-bold">Welcome</h2>
-        <p className="my-2">
+        <p className="my-4">
           Welcome to CISA 2025 (VI Iberian Congress of Biological Systematics),
           which will be held in Tenerife from October 27 to 31, 2025. The
           congress is organized by the Institute of Natural Products and
@@ -11,7 +11,7 @@ export function IntroText() {
           and the Cosmos (MCC), a truly inspiring venue to host this scientific
           event.
         </p>
-        
+
         <p className="my-2">
           Holding CISA 2025 in Tenerife and the Canary Islands is a unique
           opportunity to combine cutting-edge biodiversity science with the
@@ -36,7 +36,7 @@ export function IntroText() {
           program that encourages active participation from young researchers
           and has also been excellent platforms for postdoctoral initiatives.
         </p>
-        
+
         <p className="my-2">
           The main aim of this symposium is to reconnect the community of
           Iberian and Macaronesian senior researchers, early-career scientists,
@@ -44,8 +44,10 @@ export function IntroText() {
           And what better place to do this than in Tenerife, a meeting point
           between continents, offering a rich cultural and natural environment
           to foster science and leisure. We are truly excited to welcome you to
-          Tenerife this October! The organizing committee
+          Tenerife this October!
         </p>
+
+        <p className="my-4">The organizing committee</p>
       </div>
     </section>
   );

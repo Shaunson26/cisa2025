@@ -27,7 +27,7 @@ function AbstractDocLink() {
     <Link
       href="/Abstract-template.doc"
       aria-label="Download link for abstract template Word document"
-      className="font-semibold underline text-primary hover:text-blue-800 transition-colors focus:outline-none focus:ring focus:text-blue-800"
+      className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:accent focus:ring-accent"
     >
       Abstract-template.doc
     </Link>
@@ -42,8 +42,8 @@ export function AbstractSubmissionSection() {
 
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
           <div className="space-y-2">
-            <div className="inline-flex items-center text-sm font-medium text-primary">
-              <span className="h-px w-8 bg-primary mr-2"></span>
+            <div className="inline-flex items-center text-sm font-medium text-accent">
+              <span className="h-px w-8 bg-accent mr-2"></span>
               Abstracts
             </div>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
@@ -71,25 +71,25 @@ export function AbstractSubmissionSection() {
 
         {/* Registration includes */}
 
-        <div className="max-w-3xl mx-auto mb-10">
+        <div className="max-w-4xl mx-auto mb-10">
           <div className="grid gap-2">
-            <div className="flex justify-center items-center gap-2 lg:justify-start">
-              <Check className="h-4 w-4 text-primary" />
+            <div className="flex justify-center items-center gap-2 md:justify-start">
+              <Check className="h-4 w-4 text-accent" />
               <span>
                 Abstract should be{" "}
                 <span className="font-bold">submitted by email</span> to the
                 following address: <AbstractIPNAEmailLink />
               </span>
             </div>
-            <div className="flex justify-center items-center gap-2 lg:justify-start">
-              <Check className="h-4 w-4 text-primary" />
+            <div className="flex justify-center items-center gap-2 md:justify-start">
+              <Check className="h-4 w-4 text-accent" />
               <span>
                 Please use “Surname_Abstract” as subject of the email e.g.
                 DiesVives_Abstract
               </span>
             </div>
-            <div className="flex justify-center items-center gap-2 lg:justify-start">
-              <Check className="h-4 w-4 text-primary" />
+            <div className="flex justify-center items-center gap-2 md:justify-start">
+              <Check className="h-4 w-4 text-accent" />
               <span>
                 Please use this abstract template during registration when
                 uploading your abstract - {AbstractDocLink()}

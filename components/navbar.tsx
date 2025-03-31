@@ -21,17 +21,19 @@ const navLinks: NavLink[] = [
 
 const conferenceLogo = "/cisa2025/images/logos/cisa-logo-no-letters.svg";
 
+// bg-foreground/95 backdrop-blur supports-[backdrop-filter]:bg-foreground/60
+// backdrop-blur supports-[backdrop-filter]:bg-background/90 
 export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full bg-background drop-shadow-xl ">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <div className="relative h-14 w-14 ">
             <Image
               alt="Conference logo"
-              className="object-cover"
+              className="object-cover rounded-full"
               fill
               src={conferenceLogo}
             />
@@ -43,18 +45,21 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium ${
+              className={`text-sm  ${
                 pathname === link.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
-              } transition-colors hover:text-primary`}
+                  ? "font-bold"
+                  : "text-foreground/80"
+              } transition-colors hover:text-accent`}
             >
               {link.label}
             </Link>
           ))}
         </nav>
         <Link href="/registration">
-          <Button className="hidden md:inline-flex bg-primary text-primary-foreground shadow-sm hover:underline">
+          <Button
+            size="default"
+            className="hidden md:inline-flex hover:bg-accent"
+          >
             Register Now
           </Button>
         </Link>

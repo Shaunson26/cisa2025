@@ -29,7 +29,7 @@ export function MobileNav({ links }: NavbarPropsMobile) {
       <Button
         variant="outline"
         size="icon"
-        className="md:hidden"
+        className="md:hidden text-foreground border-foreground"
         onClick={() => setIsOpen(true)}
         aria-label="Open menu"
       >
@@ -53,7 +53,7 @@ export function MobileNav({ links }: NavbarPropsMobile) {
 
       <div
         className={cn(
-          "fixed inset-0 top-30 z-50 bg-background/95 backdrop-blur-sm md:hidden transition-opacity duration-300",
+          "fixed inset-0 top-30 z-50 bg-background md:hidden transition-opacity duration-300",
           isOpen ? "opacity-100" : "opacity-0 pointer-events-none"
         )}
       >
@@ -66,16 +66,16 @@ export function MobileNav({ links }: NavbarPropsMobile) {
               src={conferenceLogo}
             />
           </div>
-          <span className="text-xl font-bold tracking-tight">CISA 2025</span>
+          <span className="text-3xl font-bold font-dynapuff ">CISA 2025</span>
         </Link>
-        <div className="flex flex-col h-screen bg-gray-50">
+        <div className="flex flex-col h-screen bg-background">
           <nav className="container flex flex-col gap-6 py-8">
             {links.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
-                className={`text-lg font-medium transition-colors hover:text-primary ${
-                  pathname === link.href ? "text-primary" : "text-muted-foreground"
+                className={`text-lg transition-colors ${
+                  pathname === link.href ? "font-bold" : "text-foreground/60"
                 }`}
                 onClick={() => setIsOpen(false)}
               >

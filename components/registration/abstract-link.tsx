@@ -7,7 +7,7 @@ export function AbstractIPNAEmailLink() {
         href={`mailto:${address}`}
         target="_blank"
         aria-label="Link to conference email address for submission of abstract questions"
-        className="font-semibold underline text-primary hover:text-blue-800 transition-colors focus:outline-none focus:ring focus:text-blue-800"
+        className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:accent focus:ring-accent"
       >
         {address}
       </Link>
