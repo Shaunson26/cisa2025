@@ -1,5 +1,4 @@
-"use client";
-
+import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -36,26 +35,31 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
+export const metadata: Metadata = {
+  title: "Location",
+  description:  "Venue and location information for CISA 2025: VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 26 - 30, 2025."
+};
+
 export default function LocationPage() {
   return (
     <div className="flex flex-col">
       <Navbar />
       <main className="flex-1">
-      <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
+        <section className="w-full py-12 md:py-16 lg:py-20 bg-primary text-primary-foreground">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">
-                Conference Venue
+                  Conference Venue
                 </h1>
                 <p className="mx-auto max-w-[700px] text-tertiary md:text-xl">
-                From Earth to the Cosmos: A conference venue that sparks
-                discovery.
+                  From Earth to the Cosmos: A conference venue that sparks
+                  discovery.
                 </p>
               </div>
             </div>
           </div>
-        </section>  
+        </section>
 
         <section className="w-full py-12 md:py-16 lg:py-20">
           <div className="container px-4 md:px-6">
@@ -87,9 +91,13 @@ export default function LocationPage() {
                     <span>0034 922 31 52 65</span>
                   </div>
                   <div className="flex items-center gap-2">
-                    
                     <Globe className="h-5 w-5" />
-                    <Link href="www.museosdetenerife.org" className="hover:text-accent">www.museosdetenerife.org</Link>
+                    <Link
+                      href="www.museosdetenerife.org"
+                      className="hover:text-accent"
+                    >
+                      www.museosdetenerife.org
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -196,7 +204,9 @@ export default function LocationPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <Globe className="h-5 w-5" />
-                    <Link href="www.ipna.csic.es" className="hover:text-accent">www.ipna.csic.es</Link>
+                    <Link href="www.ipna.csic.es" className="hover:text-accent">
+                      www.ipna.csic.es
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -454,7 +464,7 @@ export default function LocationPage() {
           </div>
         </section>
       </main>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

@@ -28,12 +28,12 @@ export function Navbar() {
 
   return (
     <header className="sticky top-0 z-50 w-full bg-background drop-shadow-xl ">
-      <div className="container flex h-16 items-center justify-between">
+      <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-14 w-14 ">
+          <div className="relative h-20 w-20">
             <Image
               alt="Conference logo"
-              className="object-cover rounded-full"
+              className="object-cover"
               fill
               src={conferenceLogo}
             />
@@ -45,11 +45,11 @@ export function Navbar() {
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm  ${
+              className={`${
                 pathname === link.href
                   ? "font-bold"
-                  : "text-foreground/80"
-              } transition-colors hover:text-accent`}
+                  : "text-foreground/80 transition-colors hover:text-accent"
+              }`}
             >
               {link.label}
             </Link>

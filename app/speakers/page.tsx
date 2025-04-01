@@ -8,8 +8,8 @@ import { Footer } from "@/components/footer";
 import speakerInfo from "@/lib/keynote-speaker-information.json";
 
 export const metadata: Metadata = {
-  title: "Speakers | CISA 2025",
-  description: "Meet our distinguished speakers at CISA 2025",
+  title: "Speakers",
+  description: "Keynote speakers for CISA 2025: VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 26 - 30, 2025. Meet our distinguished speakers."
 };
 
 export default function SpeakersPage() {

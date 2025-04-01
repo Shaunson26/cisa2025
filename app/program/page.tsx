@@ -10,8 +10,9 @@ import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
-  title: "Program | CISA 2025",
-  description: "Program and schedule for CISA 2025",
+  title: "Program",
+  description:
+    "Program and schedule for CISA 2025: VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 26 - 30, 2025",
 };
 
 const pageParams = {};
