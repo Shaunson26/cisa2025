@@ -21,14 +21,16 @@ const navLinks: NavLink[] = [
 
 const conferenceLogo = "/cisa2025/images/logos/cisa-logo-no-letters.svg";
 
+// bg-foreground/95 backdrop-blur supports-[backdrop-filter]:bg-foreground/60
+// backdrop-blur supports-[backdrop-filter]:bg-background/90 
 export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
-      <div className="container flex h-16 items-center justify-between">
+    <header className="sticky top-0 z-50 w-full bg-background drop-shadow-xl ">
+      <div className="container flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <div className="relative h-14 w-14 overflow-hidden rounded-full">
+          <div className="relative h-20 w-20">
             <Image
               alt="Conference logo"
               className="object-cover"
@@ -36,25 +38,28 @@ export function Navbar() {
               src={conferenceLogo}
             />
           </div>
-          <span className="text-xl font-bold tracking-tight">CISA 2025</span>
+          {/* <span className="text-xl font-bold tracking-tight">CISA 2025</span> */}
         </Link>
         <nav className="hidden md:flex gap-6">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={`text-sm font-medium ${
+              className={`${
                 pathname === link.href
-                  ? "text-primary"
-                  : "text-muted-foreground"
-              } transition-colors hover:text-primary`}
+                  ? "font-bold"
+                  : "text-foreground/80 transition-colors hover:text-accent"
+              }`}
             >
               {link.label}
             </Link>
           ))}
         </nav>
         <Link href="/registration">
-          <Button className="hidden md:inline-flex bg-primary hover:bg-primary/90 text-primary-foreground shadow-sm">
+          <Button
+            size="default"
+            className="hidden md:inline-flex hover:bg-accent"
+          >
             Register Now
           </Button>
         </Link>

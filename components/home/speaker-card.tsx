@@ -39,8 +39,8 @@ export function SpeakerCard({
         </div>
         <div className="space-y-1 text-center">
           <h3 className="font-bold">{name}</h3>
-          {title && <p className="text-sm text-muted-foreground">{title}</p>}
-          <p className="text-sm text-muted-foreground">{institution}</p>
+          <p className="text-sm">{title}</p>
+          <p className="text-sm text-tertiary">{institution}</p>
         </div>
       </div>
     </div>

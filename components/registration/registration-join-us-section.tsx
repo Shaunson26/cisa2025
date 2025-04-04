@@ -10,12 +10,12 @@ export function RegistrationAreYouReady() {
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               Ready to Join Us in Tenerife?
             </h2>
-            <p className="max-w-[700px] text-primary-foreground/80 md:text-xl">
+            <p className="max-w-[700px] text-tertiary md:text-xl">
               Register today to secure your spot at CISA 2025
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
-            <Button size="lg" variant="secondary" className="px-8 shadow-lg">
+            <Button size="lg" className="px-8 shadow-lg bg-accent hover:bg-secondary">
               <RegistrationPageLink text="Register Now" className="no-underline" />
             </Button>
           </div>
