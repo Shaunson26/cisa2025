@@ -12,13 +12,13 @@ import { Footer } from "@/components/footer";
 const pageProps = {
   mainTitle: "CISA 2025",
   subTitle: "VI Iberian Congress of Biological Systematics",
-  conferenceDates: "October 26 - 30, 2025",
+  conferenceDates: "October 27 - 30, 2025",
   location: "Tenerife, Spain",
   cardImage: "/cisa2025/images/venue/la_laguna.webp",
   bgImage: "/cisa2025/images/background-desktop.webp",
-  abstractDate: "Janurary 1, 2025",
+  abstractDate: "July 31, 2025",
   earlyRegistrationDate: "June 30, 2025",
-  regularRegistrationDate: "July 1, 2025"
+  regularRegistrationDate: "July 31, 2025"
 }
 
 // bg-gradient-to-b from-background to-background/90
