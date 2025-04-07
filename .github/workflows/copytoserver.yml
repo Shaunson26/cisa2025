@@ -29,6 +29,14 @@ jobs:
       - name: Build Next.js static site
         run: npm run build
 
+      - name: Create remote directory if it doesn't exist
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.CISA_HOST }}
+          username: ${{ secrets.CISA_USERNAME }}
+          password: ${{ secrets.CISA_PASSWORD }}
+          script: rm -r cisaconference/*
+
       - name: Copy build files to server via SSH
         uses: appleboy/scp-action@v0.1.4
         with:
@@ -37,4 +45,3 @@ jobs:
           password: ${{ secrets.CISA_PASSWORD }}
           source: ./out/* 
           target: /cisaconference          
-          rm: true
