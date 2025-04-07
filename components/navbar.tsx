@@ -13,10 +13,11 @@ interface NavLink {
 
 const navLinks: NavLink[] = [
   { label: "Home", href: "/" },
-  { label: "Program", href: "/program" },
   { label: "Speakers", href: "/speakers" },
+  { label: "Program", href: "/program" },
   { label: "Location", href: "/location" },
   { label: "Registration", href: "/registration" },
+  { label: "About", href: "/about" }
 ];
 
 const conferenceLogo = "/cisa2025/images/logos/cisa-logo-no-letters.svg";

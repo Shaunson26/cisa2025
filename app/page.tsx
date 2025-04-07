@@ -4,9 +4,8 @@ import { IntroText } from "@/components/home/intro-text";
 // import { CountdownSection } from "@/components/home/countdown";
 import { KeyDateSection } from "@/components/home/key-date-section";
 import { KeynoteSpeakerSection } from "@/components/home/keynote-speaker-section";
-import { OrganisationCommitteeSection } from "@/components/home/organisation-committee-section";
-import { ScientificCommitteeSection } from "@/components/home/scientific-committee-section";
 import { SponsorSection } from "@/components/home/sponsors";
+import { JoinUsSection } from "@/components/join-us-section";
 import { Footer } from "@/components/footer";
 
 const pageProps = {
@@ -50,9 +49,9 @@ export default function Home() {
           conferenceDates = {pageProps.conferenceDates}
         />
 
-    
-        <OrganisationCommitteeSection />
-        <ScientificCommitteeSection />    
+        <JoinUsSection/>
+
+  
         <SponsorSection />   
 
 

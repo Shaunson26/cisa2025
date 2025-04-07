@@ -99,9 +99,14 @@ export function AbstractSubmissionSection() {
         </div>
 
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
-          <Button className="px-8 shadow-lg hover:underline">
-            Submit your abstract
-          </Button>
+          <Link href="mailto:cisa2025abstracts@ipna.csic.es">
+            <Button size="lg" className="px-8 shadow-lg md:inline-flex hover:bg-accent">
+              <div className="flex flex-col justify-center">
+                <span>Submit your abstract</span>
+                <span className="text-xs">opens mail client</span>
+              </div>
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
