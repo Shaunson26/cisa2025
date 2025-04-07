@@ -34,5 +34,5 @@ jobs:
           username: ${{ secrets.CISA_USERNAME }}
           password: ${{ secrets.CISA_PASSWORD }}
           source: ./out/* 
-          target: cisaconference/
-          rm: true
+          target: ./
+          rm: false
