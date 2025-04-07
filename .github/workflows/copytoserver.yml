@@ -1,0 +1,40 @@
+name: Deploy Static Next.js Build on PR Merge to Publish
+
+on:
+  # Runs on closed PR to publish branch
+  pull_request:
+    types: [closed]
+    branches:
+      - publish
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'publish' && github.event.pull_request.head.ref == 'main'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "lts/*"
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Build Next.js static site
+        run: npm run build
+
+      - name: Copy build files to server via SSH
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.CISA_HOST }}
+          username: ${{ secrets.CISA_USERNAME }}
+          password: ${{ secrets.CISA_PASSWORD }}
+          source: ./out/* 
+          target: ${{ secrets.CISA_DEPLOY_PATH }}          
+          rm: true
