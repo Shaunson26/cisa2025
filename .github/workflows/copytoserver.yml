@@ -2,8 +2,7 @@ name: Deploy Static Next.js Build on PR Merge to Publish
 
 on:
   # Runs on closed PR to publish branch
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - publish
   # Allows you to run this workflow manually from the Actions tab
@@ -11,7 +10,6 @@ on:
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'publish' && github.event.pull_request.head.ref == 'main'
     runs-on: ubuntu-latest
 
     steps:
@@ -29,19 +27,21 @@ jobs:
       - name: Build Next.js static site
         run: npm run build
 
-      - name: Create remote directory if it doesn't exist
-        uses: appleboy/ssh-action@v1.0.3
-        with:
-          host: ${{ secrets.CISA_HOST }}
-          username: ${{ secrets.CISA_USERNAME }}
-          password: ${{ secrets.CISA_PASSWORD }}
-          script: rm -r cisaconference/*
-
       - name: Copy build files to server via SSH
+      # Create out/ on server
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.CISA_HOST }}
           username: ${{ secrets.CISA_USERNAME }}
           password: ${{ secrets.CISA_PASSWORD }}
           source: ./out/* 
-          target: /cisaconference          
+          target: ./
+          rm: false
+          
+      - name: Move files and clean up
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.CISA_HOST }}
+          username: ${{ secrets.CISA_USERNAME }}
+          password: ${{ secrets.CISA_PASSWORD }}
+          script: rm -r cisaconference/* && mv out/* cisaconference/ && rm -r out
