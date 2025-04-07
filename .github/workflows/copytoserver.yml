@@ -2,8 +2,7 @@ name: Deploy Static Next.js Build on PR Merge to Publish
 
 on:
   # Runs on closed PR to publish branch
-  pull_request:
-    types: [closed]
+  push:
     branches:
       - publish
   # Allows you to run this workflow manually from the Actions tab
@@ -11,7 +10,6 @@ on:
 
 jobs:
   deploy:
-    if: github.event.pull_request.merged == true && github.event.pull_request.base.ref == 'publish' && github.event.pull_request.head.ref == 'main'
     runs-on: ubuntu-latest
 
     steps:
