@@ -28,6 +28,7 @@ jobs:
         run: npm run build
 
       - name: Copy build files to server via SSH
+      # Create out/ on server
         uses: appleboy/scp-action@v0.1.4
         with:
           host: ${{ secrets.CISA_HOST }}
@@ -36,3 +37,11 @@ jobs:
           source: ./out/* 
           target: ./
           rm: false
+          
+      - name: Move files and clean up
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ secrets.CISA_HOST }}
+          username: ${{ secrets.CISA_USERNAME }}
+          password: ${{ secrets.CISA_PASSWORD }}
+          script: rm -r cisaconference/* && mv out/* cisaconference/ && rm -r out
