@@ -87,13 +87,9 @@ export default function LocationPage() {
                     </span>
                   </div>
                   <div className="flex items-center gap-2">
-                    <Phone className="h-5 w-5" />
-                    <span>0034 922 31 52 65</span>
-                  </div>
-                  <div className="flex items-center gap-2">
                     <Globe className="h-5 w-5" />
                     <Link
-                      href="www.museosdetenerife.org"
+                      href="https://www.museosdetenerife.org"
                       className="hover:text-accent"
                     >
                       www.museosdetenerife.org
