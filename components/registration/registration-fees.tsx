@@ -72,7 +72,7 @@ export function RegistrationFeesSection() {
               Registration options
             </h2>
             <p className="max-w-[700px] text-primary/80 md:text-xl">
-              Early bird until 30th June 2023
+              Early bird until 30th June 2025
             </p>
           </div>
 
