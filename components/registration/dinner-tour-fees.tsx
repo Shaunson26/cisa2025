@@ -16,7 +16,7 @@ const cardInfo = [
     label: "Conference dinner",
     date: "October 29, 2025 • XX:00 PM",
     price: "50€",
-    img: "/cisa2025/placeholder.svg",
+    img: "/cisa2025/images/dinner.webp",
     text: " Join us for an elegant evening at [..]. The dinner includes a [...] and entertainment.",
   },
   {
