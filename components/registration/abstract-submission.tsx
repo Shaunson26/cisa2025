@@ -99,9 +99,6 @@ export function AbstractSubmissionSection() {
         </div>
 
         <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
-          <Button className="px-8 shadow-lg hover:underline">
-            Submit your abstract
-          </Button>
         </div>
       </div>
     </section>
