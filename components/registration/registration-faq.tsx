@@ -12,7 +12,7 @@ export function RegistrationFAQSection(){
             <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
               <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-                  Registration FAQ - TODO
+                  Registration FAQ
                 </h2>
                 <p className="max-w-[700px] text-muted-foreground md:text-xl">
                   Common questions about the registration process
@@ -75,18 +75,6 @@ export function RegistrationFAQSection(){
                       institution are permitted at no additional cost. Please
                       contact us at least two weeks before the conference with
                       the details of the new attendee.
-                    </p>
-                  </AccordionContent>
-                </AccordionItem>
-                <AccordionItem value="item-5">
-                  <AccordionTrigger>
-                    Do you offer group discounts?
-                  </AccordionTrigger>
-                  <AccordionContent>
-                    <p>
-                      Yes, we offer a 10% discount for groups of 5 or more from
-                      the same institution. Please contact us directly to
-                      arrange group registration.
                     </p>
                   </AccordionContent>
                 </AccordionItem>
