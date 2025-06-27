@@ -7,7 +7,7 @@ export function IntroText() {
           Welcome to CISA 2025 (VI Iberian Congress of Biological Systematics),
           which will be held in Tenerife from October 27 to 31, 2025. The
           congress is organized by the Institute of Natural Products and
-          Agrobiology (IPNA-CSIC) and will take place at the Museum of Science
+          Agrobiology (IPNA-CSIC) and the University of La Laguna (ULL) and will take place at the Museum of Science
           and the Cosmos (MCC), a truly inspiring venue to host this scientific
           event.
         </p>

@@ -5,6 +5,9 @@ const sponsorImgs = [
   "cisa2025/images/logos/cisc-logo.png",
   "cisa2025/images/logos/ipna-logo.png",
   "cisa2025/images/logos/mcc-logo.png",
+  "cisa2025/images/logos/cat-logo.png",
+  "cisa2025/images/logos/gob-can-logo.png",
+  "cisa2025/images/logos/ll-logo.png",
 ];
 
 export function SponsorSection() {
