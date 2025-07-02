@@ -72,11 +72,12 @@ export function RegistrationFeesSection() {
               Registration options
             </h2>
             <p className="max-w-[700px] text-primary/80 md:text-xl">
-              Early bird until 30th June 2025
+              Early bird <b>now extended</b> until 31st July 2025
+            </p>
+            <p className="max-w-[700px] text-primary/80 md:text-xl">
+              Regular registration open until 10th September 2025
             </p>
           </div>
-
-
         </div>
 
         {/* Magna info */}
@@ -86,18 +87,18 @@ export function RegistrationFeesSection() {
             <AlertCircle className="h-4 w-4" />
             <AlertTitle className="font-bold">Info</AlertTitle>
             <AlertDescription>
-            Registration will be handled in conjunction with{" "}
-            {MagnaCongresosLink()}. We provide a{" "}
-            <RegistrationPageLink 
-            text="link to the registration form"
-            className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:text-accent focus:ring-accent"
-             />. If
-            you have questions about the registration process or related to
-            travel logistics and accommodation, do not hesitate to contact us at{" "}
-            {MagnaEmailLink()}.
+              Registration will be handled in conjunction with{" "}
+              {MagnaCongresosLink()}. We provide a{" "}
+              <RegistrationPageLink
+                text="link to the registration form"
+                className="font-semibold underline hover:text-accent transition-colors focus:outline-none focus:ring focus:text-accent focus:ring-accent"
+              />
+              . If you have questions about the registration process or related
+              to travel logistics and accommodation, do not hesitate to contact
+              us at {MagnaEmailLink()}.
             </AlertDescription>
           </Alert>
-        </div>    
+        </div>
 
         {/* Registration includes */}
 
@@ -106,17 +107,17 @@ export function RegistrationFeesSection() {
             Registration includes:
           </h3>
           <div className="max-w-3xl mx-auto">
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-4">
-            {registrationIncludes.map((v, i) => (
-              <div
-                key={i}
-                className="flex justify-center items-center gap-2 lg:justify-start"
-              >
-                <Check className="h-4 w-4 text-accent" />
-                <span>{v}</span>
-              </div>
-            ))}
-          </div>
+            <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mb-4">
+              {registrationIncludes.map((v, i) => (
+                <div
+                  key={i}
+                  className="flex justify-center items-center gap-2 lg:justify-start"
+                >
+                  <Check className="h-4 w-4 text-accent" />
+                  <span>{v}</span>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
 

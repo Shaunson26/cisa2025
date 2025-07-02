@@ -17,7 +17,7 @@ export function KeyDateSection(props: KeyDateProps) {
           <div className="space-y-2">
             <SectionPreTitle>IMPORTANT DATES</SectionPreTitle>
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
-              Key Milestones
+              Key Dates
             </h2>
             <p className="max-w-[700px] text-primary/80 md:text-xl">
               Mark your calendar for these important conference deadlines

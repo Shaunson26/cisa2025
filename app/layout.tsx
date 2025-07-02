@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     template: "%s | CISA 2025",
   },
   description:
-    "VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 26-30, 2025. Explore latest advances in systematics and evolutionary biology.",
+    "VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 27-30, 2025. Explore latest advances in systematics and evolutionary biology.",
   authors: [
     { name: "Shaun Nielsen", url: "https://www.shaunnielsen.com.au" },
     { name: "Marius Eisele" },
