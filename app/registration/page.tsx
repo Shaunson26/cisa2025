@@ -10,7 +10,7 @@ import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
   title: "Registration",
-  description: "Register for CISA 2025: VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 26 - 30, 2025. Secure your spot to attend conference events."
+  description: "Register for CISA 2025: VI Iberian Congress of Biological Systematics in Tenerife, Spain, October 27 - 30, 2025. Secure your spot to attend conference events."
 };
 
 export default function ProgramPage() {

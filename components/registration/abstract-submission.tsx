@@ -49,7 +49,9 @@ export function AbstractSubmissionSection() {
             <h2 className="text-3xl font-bold tracking-tighter md:text-4xl">
               Abstract submission
             </h2>
-            <p className="max-w-[700px] text-muted-foreground md:text-xl"></p>
+            <p className="max-w-[700px] text-primary/80 md:text-xl">
+              Abstract submission open until 10th September 2025
+            </p>
           </div>
         </div>
 
@@ -98,8 +100,7 @@ export function AbstractSubmissionSection() {
           </div>
         </div>
 
-        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10">
-        </div>
+        <div className="flex flex-col items-center justify-center space-y-4 text-center mb-10"></div>
       </div>
     </section>
   );
