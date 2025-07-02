@@ -17,8 +17,8 @@ const pageProps = {
   cardImage: "/cisa2025/images/venue/la_laguna.webp",
   bgImage: "/cisa2025/images/background-desktop.webp",
   abstractDate: "July 31, 2025",
-  earlyRegistrationDate: "June 30, 2025",
-  regularRegistrationDate: "July 31, 2025"
+  earlyRegistrationDate: "July 31, 2025",
+  regularRegistrationDate: "September 10, 2025"
 }
 
 // bg-gradient-to-b from-background to-background/90
