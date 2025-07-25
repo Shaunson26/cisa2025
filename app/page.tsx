@@ -16,7 +16,7 @@ const pageProps = {
   location: "Tenerife, Spain",
   cardImage: "/cisa2025/images/venue/la_laguna.webp",
   bgImage: "/cisa2025/images/background-desktop.webp",
-  abstractDate: "July 31, 2025",
+  abstractDate: "September 10, 2025",
   earlyRegistrationDate: "July 31, 2025",
   regularRegistrationDate: "September 10, 2025"
 }
