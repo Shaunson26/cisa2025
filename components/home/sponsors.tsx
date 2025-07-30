@@ -9,6 +9,7 @@ const sponsorImgs = [
   "cisa2025/images/logos/gob-can-logo.png",
   "cisa2025/images/logos/ll-logo.png",
   "cisa2025/images/logos/melcan-logo.png",
+  "cisa2025/images/logos/biotein-logo.png",
 ];
 
 export function SponsorSection() {
