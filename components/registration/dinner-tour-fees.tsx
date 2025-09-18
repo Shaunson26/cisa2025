@@ -14,17 +14,19 @@ import { RegistrationPageLink } from "./registration-link";
 const cardInfo = [
   {
     label: "Conference dinner",
-    date: "October 29, 2025 • XX:00 PM",
+    date: "October 29, 2025 • 8:30 PM",
     price: "35€",
+    place: "Restaurant Gulagú • Calle Manuel de Ossuna 24", 
     img: "/cisa2025/images/dinner.webp",
-    text: " Join us for an elegant evening at [..]. The dinner includes a [...] and entertainment.",
+    text: " Join us for an elegant evening in the centre of La Laguna and enjoy tasty cuisine and warm atmosphere.",
   },
   {
     label: "Tour to Teide",
-    date: "October 30, 2025 • XX:00 PM",
+    date: "October 30, 2025 • 3:00 PM",
     price: "35€",
+    place: "Pick up and drop off at the Museum of Science and the Cosmos.", 
     img: "/cisa2025/images/teide.webp",
-    text: "The conference aims to organize a half day visit to el Teide on Thursday afternoon after the closing. A minimum number of participants is required.",
+    text: "The conference aims to organize a half day visit to el Teide on Thursday afternoon after the closing. Lunch will be included.",
   },
 ];
 
@@ -61,6 +63,7 @@ export function DinnerTourFeeSection() {
               <CardHeader>
                 <CardTitle>{v.label}</CardTitle>
                 <CardDescription className="text-tertiary">{v.date}</CardDescription>
+                <CardDescription className="text-tertiary">{v.place}</CardDescription>
               </CardHeader>
               <CardContent>
                 <p className=" mb-4">

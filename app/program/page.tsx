@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { DinnerTourFeeSection } from "@/components/registration/dinner-tour-fees";
+
 
 export const metadata: Metadata = {
   title: "Program",
@@ -105,7 +107,7 @@ export default function ProgramPage() {
                         </div>
                       </div>
                       <h3 className="text-lg font-bold mt-2">
-                        Plenary Talk - Pedro Oromí
+                        Plenary Talk - Miquel Arnedo
                       </h3>
                     </div>
                   </div>
@@ -371,12 +373,14 @@ export default function ProgramPage() {
                     Registration includes coffee and drinks, the welcome
                     reception with tapas and daily lunch
                   </li>
-                  <li>The congress dinner will be paid separately (€50)</li>
+                  <li>The congress dinner will be paid separately (€35)</li>
                 </ul>
               </div>
             </div>
           </div>
         </section>
+
+        <DinnerTourFeeSection />
 
         <section className="w-full py-12 md:py-16 lg:py-20 bg-muted/50">
           <div className="container px-4 md:px-6">
