@@ -7,9 +7,12 @@ const sponsorImgs = [
   "cisa2025/images/logos/mcc-logo.png",
   "cisa2025/images/logos/cat-logo.png",
   "cisa2025/images/logos/gob-can-logo.png",
+  "cisa2025/images/logos/gobcan-logo-png",
   "cisa2025/images/logos/ll-logo.png",
   "cisa2025/images/logos/melcan-logo.png",
   "cisa2025/images/logos/biotein-logo.png",
+  "cisa2025/images/logos/biodivcanaria-logo.png",
+  "cisa2025/images/logos/biota-logo.png",
 ];
 
 export function SponsorSection() {
