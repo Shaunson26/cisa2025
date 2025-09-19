@@ -15,6 +15,8 @@ const sponsorImgs = [
   "cisa2025/images/logos/biota-logo.png",
   "cisa2025/images/logos/cabildo-logo.png",
   "cisa2025/images/logos/allgenetics-logo.png",
+  "cisa2025/images/logos/transmitting_logo.png",
+  "cisa2025/images/logos/delegacion_logo.png",
 ];
 
 export function SponsorSection() {
