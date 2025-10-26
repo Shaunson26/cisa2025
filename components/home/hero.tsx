@@ -87,7 +87,7 @@ export function Hero(props: HeroProps) {
                   variant="secondary"
                   className="px-8 shadow-lg hover:bg-accent"
                 >
-                  View Program
+                  Download Program and Abstracts
                 </Button>
               </Link>
             </div>
