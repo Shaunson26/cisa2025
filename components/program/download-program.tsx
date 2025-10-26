@@ -12,7 +12,7 @@ export function DownloadMaterialsSection() {
               Download Program Materials
             </h2>
             <p className="max-w-[700px]  md:text-xl">
-              Access detailed information about sessions and presentations
+              Access detailed information about sessions and presentations in PDF format
             </p>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row">
