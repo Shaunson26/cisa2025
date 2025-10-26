@@ -16,19 +16,31 @@ export function DownloadMaterialsSection() {
             </p>
           </div>
           <div className="flex flex-col gap-2 sm:flex-row">
-            <Link href="/Programa_Sintético_CISA2025_A5.pdf">
+            <Link
+              href="/Programa_Sintético_CISA2025_A5.pdf"
+              aria-label="Download program short PDF"
+              target="_blank"
+            >
               <Button size="lg" className="px-8 shadow-lg hover:bg-accent">
                 <File />
                 Program (short)
               </Button>
             </Link>
-            <Link href="/Extended_Program_CISA2025.pdf">
+            <Link
+              href="/Extended_Program_CISA2025.pdf"
+              aria-label="Download program extended PDF"
+              target="_blank"
+            >
               <Button size="lg" className="px-8 shadow-lg hover:bg-accent">
                 <File />
                 Program (extended)
               </Button>
             </Link>
-            <Link href="/CISA2025_Book_Abstracts_ok.pdf">
+            <Link
+              href="/CISA2025_Book_Abstracts_ok.pdf"
+              aria-label="Download abstracts PDF"
+              target="_blank"
+            >
               <Button size="lg" className="px-8 shadow-lg hover:bg-accent">
                 <File />
                 Abstracts
